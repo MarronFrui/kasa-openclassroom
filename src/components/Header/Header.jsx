@@ -5,16 +5,13 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <h1 className="header-logo">Kasa</h1>
+        <img src="../src/assets/logo.svg"></img>
         <nav className="nav">
           <Link to="/" className="nav-link">
-            Home
+            ACCUEIL
           </Link>
           <Link to="../About/About.jsx" className="nav-link">
-            About
-          </Link>
-          <Link to="/employees" className="nav-link">
-            Employés
+            A PROPOS
           </Link>
         </nav>
       </div>

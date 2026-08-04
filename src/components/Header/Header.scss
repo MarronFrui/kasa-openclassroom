@@ -1,0 +1,29 @@
+.header img {
+  padding: 1rem;
+  width: 40%;
+}
+
+.header {
+  display: flex;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav a {
+  text-decoration: underline;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+}
