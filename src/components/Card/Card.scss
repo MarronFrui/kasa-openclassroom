@@ -1,0 +1,18 @@
+.card {
+  display: flex;
+  width: auto;
+  height: 28.5vh;
+  margin: 2.5vh 0 2.5vh 0;
+  border-radius: 2vh;
+  background-color: rgb(219, 80, 80);
+  color: white;
+}
+
+.card-title {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5vh;
+  margin-left: 3vh;
+  font-weight: 700;
+  font-size: 2vh;
+}
