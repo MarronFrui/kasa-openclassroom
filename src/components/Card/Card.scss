@@ -1,18 +1,23 @@
 .card {
   display: flex;
   width: auto;
-  height: 28.5vh;
-  margin: 2.5vh 0 2.5vh 0;
-  border-radius: 2vh;
+  height: 28.4vh;
+  max-height: 255px;
+  margin: 1.5rem 0 1.5rem 0;
+  border-radius: 1rem;
   background-color: rgb(219, 80, 80);
   color: white;
+  @media (min-width: 720px) {
+    width: 38vh;
+    height: 38vh;
+  }
 }
 
 .card-title {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 5vh;
-  margin-left: 3vh;
+  margin-bottom: 5rem;
+  margin-left: 3rem;
   font-weight: 700;
   font-size: 2vh;
 }
