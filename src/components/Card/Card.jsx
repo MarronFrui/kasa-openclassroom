@@ -1,11 +1,11 @@
 import './Card.scss';
-import data from '../../data/data.json';
 
-export default function Card() {
+export default function Card({ title, cover }) {
   return (
     <>
       <div className="card">
-        <p className="card-title">{data.id}</p>
+        <img className="card-image" src={cover} alt="" width={100} height={100}></img>
+        <p className="card-title">{title}</p>
       </div>
     </>
   );
