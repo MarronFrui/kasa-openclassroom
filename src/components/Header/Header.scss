@@ -1,10 +1,11 @@
 .header img {
-  padding: 1rem;
   width: 40%;
 }
 
 .header {
   display: flex;
+  padding: 0.5vh 0 2vh 0;
+  height: 5.2vh;
 }
 
 .header-content {
@@ -25,9 +26,9 @@
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 4vh;
+  justify-content: flex-end;
   font-family: Montserrat;
   font-size: 13px;
   font-weight: 500;
-  line-height: 143%;
 }
