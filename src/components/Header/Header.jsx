@@ -10,7 +10,7 @@ function Header() {
           <Link to="/" className="nav-link">
             ACCUEIL
           </Link>
-          <Link to="../About/About.jsx" className="nav-link">
+          <Link to="../About/About.jsx" className="nav-link nav-about">
             A PROPOS
           </Link>
         </nav>

@@ -14,8 +14,11 @@
 }
 
 .nav a {
-  text-decoration: underline;
   color: black;
+  text-decoration: underline;
+  &.nav-about {
+    text-decoration: none;
+  }
 }
 
 .nav {
@@ -24,6 +27,7 @@
   flex-direction: row;
   justify-content: space-around;
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
+  line-height: 143%;
 }
