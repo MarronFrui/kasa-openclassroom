@@ -10,6 +10,8 @@
 
 .banner-container img {
   width: 100%;
+  height: auto;
+  overflow: hidden;
   object-fit: cover;
   border-radius: 0.5rem;
 }
