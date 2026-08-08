@@ -1,3 +1,9 @@
-export default function Colapse() {
-  return;
+export default function Collapse() {
+  return (
+    <>
+    <div className="collapse">
+      <
+    </div>
+    </>
+  )
 }
