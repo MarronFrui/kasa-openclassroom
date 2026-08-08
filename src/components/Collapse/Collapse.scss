@@ -1,4 +1,11 @@
 .collapse {
+  display: flex;
   background-color: #ff6060;
   color: white;
+  margin: 2rem 0 2rem 0;
+  height: 2rem;
+  align-items: center;
+  padding-left: 1rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
 }

@@ -1,3 +1,5 @@
+import './Collapse.scss';
+
 export default function Collapse() {
   return (
     <>
