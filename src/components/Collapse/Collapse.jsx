@@ -16,9 +16,11 @@ export default function Collapse() {
         <img src="../../src/assets/arrow.png"></img>
       </div>
       <div className={`equipement ${isOpen ? '' : 'hidden'}`}>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
-        <li>Placeholder</li>
+        <div className="equipement__content">
+          <li>Placeholder</li>
+          <li>Placeholder</li>
+          <li>Placeholder</li>
+        </div>
       </div>
     </>
   );

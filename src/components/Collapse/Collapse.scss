@@ -13,6 +13,16 @@
 
 .equipement {
   transition: max-height 0.3s ease;
+  max-height: 500px;
+  list-style: none;
+  li {
+    padding: 0.2rem 0 0.2rem 1.5rem;
+  }
+}
+
+.equipement__content {
+  background-color: #f6f6f673;
+  padding: 1rem 0 1rem 0;
 }
 
 .hidden {
