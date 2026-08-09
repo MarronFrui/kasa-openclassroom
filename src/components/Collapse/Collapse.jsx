@@ -5,6 +5,7 @@ export default function Collapse() {
     <>
       <div className="collapse">
         <div> Placeholder </div>
+        <img src="../../src/assets/arrow.png"></img>
       </div>
     </>
   );
