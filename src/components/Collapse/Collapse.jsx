@@ -7,6 +7,11 @@ export default function Collapse() {
         <div> Placeholder </div>
         <img src="../../src/assets/arrow.png"></img>
       </div>
+      <div className="equipement">
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+        <li>Placeholder</li>
+      </div>
     </>
   );
 }

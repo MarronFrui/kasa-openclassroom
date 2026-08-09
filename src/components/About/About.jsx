@@ -6,6 +6,9 @@ export default function About() {
     <>
       <Banner />
       <Collapse />
+      <Collapse />
+      <Collapse />
+      <Collapse />
     </>
   );
 }
