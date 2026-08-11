@@ -1,11 +1,14 @@
 import Banner from '../Banner/Banner';
 import Gallery from '../Gallery/Gallery';
+import './Home.scss';
 
 export default function Home() {
   return (
     <>
       <Banner />
-      <Gallery />
+      <section className="gallery-container">
+        <Gallery />
+      </section>
     </>
   );
 }
