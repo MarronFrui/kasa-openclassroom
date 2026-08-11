@@ -5,8 +5,8 @@ export default function Error() {
   return (
     <>
       <section>
-        <div className="Error">404</div>
-        <div>La page que vous avez demander n'existe pas</div>
+        <div className="error">404</div>
+        <div className="error-text">Oups! La page que vous demandez n'existe pas.</div>
         <Link to="/" className="link">
           Retourner sur la page d'accueil
         </Link>

@@ -1,5 +1,9 @@
 .header img {
-  width: 43%;
+  width: 143px;
+  @media (min-width: 720px) {
+    width: 210px;
+  }
+  max-height: 68px;
 }
 
 .header {
