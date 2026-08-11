@@ -1,0 +1,18 @@
+.link {
+  color: black;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  &.nav-about {
+    text-decoration: none;
+  }
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-end;
+  font-size: 12px;
+  font-weight: 500;
+}
