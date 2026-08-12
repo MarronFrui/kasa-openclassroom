@@ -4,7 +4,8 @@
   height: 12vh;
   max-height: 111px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 720px) {
+    max-height: 223px;
     height: 20vh;
   }
 }
@@ -15,6 +16,9 @@
   overflow: hidden;
   object-fit: cover;
   border-radius: 0.5rem;
+  @media (min-width: 720px) {
+    border-radius: 1.5rem;
+  }
 }
 
 .banner-text {
@@ -30,4 +34,15 @@
   font-weight: 600;
   font-size: 24px;
   background-color: rgba(0, 0, 0, 0.6);
+  @media (min-width: 720px) {
+    justify-content: center;
+    border-radius: 1.5rem;
+  }
+}
+
+.mobile-break {
+  display: block;
+  @media (min-width: 720px) {
+    display: none;
+  }
 }
