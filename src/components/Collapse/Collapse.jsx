@@ -1,7 +1,7 @@
 import './Collapse.scss';
 import { useState } from 'react';
 
-export default function Collapse() {
+export default function Collapse({ title, list }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -12,14 +12,14 @@ export default function Collapse() {
           setIsOpen(!isOpen);
         }}
       >
-        <div> Placeholder </div>
+        <div> {title} </div>
         <img src="../../src/assets/arrow.png"></img>
       </div>
       <div className={`equipement ${isOpen ? '' : 'hidden'}`}>
         <div className="equipement__content">
-          <li>Placeholder</li>
-          <li>Placeholder</li>
-          <li>Placeholder</li>
+          {list.map((element, index) => {
+            return <li key={index}>{element}</li>;
+          })}
         </div>
       </div>
     </>
