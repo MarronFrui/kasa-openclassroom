@@ -1,11 +1,11 @@
 import './Banner.scss';
 
-export default function Banner() {
+export default function Banner({ image, text }) {
   return (
     <>
       <div className="banner-container">
-        <img src="../../src/assets/banner_aboutkasa.png" />
-        <div className="banner-text"></div>
+        <img src={image} alt="Banner" />
+        <div className="banner-text">{text}</div>
       </div>
     </>
   );

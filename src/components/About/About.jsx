@@ -1,10 +1,11 @@
 import Banner from '../Banner/Banner';
 import Collapse from '../Collapse/Collapse';
+import bannerAbout from '../../assets/banner_aboutkasa.png';
 
 export default function About() {
   return (
     <>
-      <Banner />
+      <Banner image={bannerAbout} text={''} />
       <Collapse
         title="Fiabilité"
         list={[
