@@ -13,6 +13,7 @@ export default function Home() {
             <br className="mobile-break" /> partout et ailleurs
           </>
         }
+        opacity={0.5}
       />
       <section className="gallery-container">
         <Gallery />
