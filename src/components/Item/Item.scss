@@ -20,4 +20,23 @@ section > img {
   font-weight: 500;
   color: #ff6060;
   padding-bottom: 0.5rem;
+  @media (min-width: 720px) {
+    font-size: 36px;
+  }
+}
+
+.description-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profil-pic {
+  display: flex;
+  justify-content: end;
+}
+
+.tags {
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }

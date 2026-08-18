@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
+  margin: 0;
   font-family: Montserrat;
-  @media (min-width: 720px) {
-    max-width: 1240px;
-  }
 }
 
 header,
@@ -18,7 +13,10 @@ main {
 main {
   flex: 1;
 }
+
 #root {
   display: flex;
   flex-direction: column;
+  max-width: 1240px;
+  margin: 0 auto;
 }
