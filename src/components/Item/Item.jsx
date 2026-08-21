@@ -1,5 +1,6 @@
 import Collapse from '../Collapse/Collapse';
 import Tag from '../Tag/Tag';
+import Rating from '../Rating/Rating';
 import { useParams } from 'react-router';
 import properties from '../../data/data.json';
 import './Item.scss';
@@ -15,7 +16,7 @@ export default function Item() {
           <div>
             <div className="title">{property.title}</div>
             <div>{property.location}</div>
-            <div>Placeholder rating</div>
+            <Rating rating={property.rating} />
             <div className="tags">
               <Tag tags={property.tags}></Tag>
             </div>
