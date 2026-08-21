@@ -13,7 +13,10 @@ export default function Collapse({ title, list }) {
         }}
       >
         <div> {title} </div>
-        <img src="../../src/assets/arrow.png"></img>
+        <img
+          className={`arrow ${isOpen ? 'rotate' : 'default'}`}
+          src="../../src/assets/arrow.png"
+        ></img>
       </div>
       <div className={`equipement ${isOpen ? '' : 'hidden'}`}>
         <div className="equipement__content">
