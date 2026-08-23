@@ -1,13 +1,15 @@
 import './Rating.scss';
 
-export default function rating(rating) {
+export default function Rating(rating) {
   return (
     <>
-      <img src="../src/assets/rate_star.svg"></img>
-      <img src="../src/assets/rate_star.svg"></img>
-      <img src="../src/assets/rate_star.svg"></img>
-      <img src="../src/assets/rate_star.svg"></img>
-      <img src="../src/assets/rate_star.svg"></img>
+      <div className="rating-container">
+        <img src="../src/assets/rate_star.svg"></img>
+        <img src="../src/assets/rate_star.svg"></img>
+        <img src="../src/assets/rate_star.svg"></img>
+        <img src="../src/assets/rate_star.svg"></img>
+        <img src="../src/assets/rate_star.svg"></img>
+      </div>
     </>
   );
 }

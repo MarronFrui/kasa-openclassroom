@@ -15,11 +15,11 @@ export default function Item() {
         <section className="description-container">
           <div>
             <div className="title">{property.title}</div>
-            <div>{property.location}</div>
-            <Rating rating={property.rating} />
+            <div className="location">{property.location}</div>
             <div className="tags">
               <Tag tags={property.tags}></Tag>
             </div>
+            <Rating rating={property.rating} />
           </div>
           <div className="profil-pic">
             <div>profil pic placeholder</div>
