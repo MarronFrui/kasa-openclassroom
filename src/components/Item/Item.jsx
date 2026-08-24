@@ -28,9 +28,10 @@ export default function Item() {
             </div>
           </div>
         </section>
-
-        <Collapse title="Description" list={[property.description]} />
-        <Collapse title="Equipements" list={property.equipments} />
+        <section className="collapse-container">
+          <Collapse title="Description" list={[property.description]} />
+          <Collapse title="Equipements" list={property.equipments} />
+        </section>
       </section>
     </>
   );

@@ -28,6 +28,10 @@ section > img {
 .description-container {
   display: flex;
   flex-direction: column;
+  @media (min-width: 720px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .social {
@@ -36,6 +40,9 @@ section > img {
   margin-top: 1rem;
   align-items: center;
   justify-content: space-between;
+  @media (min-width: 720px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .profil-pic {
@@ -50,4 +57,19 @@ section > img {
 
 .location {
   font-size: 18px;
+}
+
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 720px) {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.item-container .wrapper {
+  @media (min-width: 720px) {
+    width: 50%;
+  }
 }
