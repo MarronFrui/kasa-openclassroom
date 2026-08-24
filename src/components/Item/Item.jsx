@@ -1,6 +1,7 @@
 import Collapse from '../Collapse/Collapse';
 import Tag from '../Tag/Tag';
 import Rating from '../Rating/Rating';
+import Profil from '../Profil/Profil';
 import { useParams } from 'react-router';
 import properties from '../../data/data.json';
 import './Item.scss';
@@ -22,7 +23,7 @@ export default function Item() {
             <Rating rating={property.rating} />
           </div>
           <div className="profil-pic">
-            <div>profil pic placeholder</div>
+            <Profil picture={property.host.picture} name={property.host.name}></Profil>
           </div>
         </section>
 
