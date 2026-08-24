@@ -20,10 +20,12 @@ export default function Item() {
             <div className="tags">
               <Tag tags={property.tags}></Tag>
             </div>
-            <Rating rating={property.rating} />
           </div>
-          <div className="profil-pic">
-            <Profil picture={property.host.picture} name={property.host.name}></Profil>
+          <div className="social">
+            <Rating rating={property.rating} />
+            <div className="profil-pic">
+              <Profil picture={property.host.picture} name={property.host.name}></Profil>
+            </div>
           </div>
         </section>
 
