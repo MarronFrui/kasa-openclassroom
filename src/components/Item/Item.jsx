@@ -5,6 +5,7 @@ import Profil from '../Profil/Profil';
 import { useParams } from 'react-router';
 import properties from '../../data/data.json';
 import './Item.scss';
+import Slideshow from '../Slideshow/Slideshow';
 
 export default function Item() {
   const { id } = useParams();
@@ -12,7 +13,7 @@ export default function Item() {
   return (
     <>
       <section className="item-container">
-        <img src={property.cover}></img>
+        <Slideshow images={property.pictures} />
         <section className="description-container">
           <div>
             <div className="title">{property.title}</div>

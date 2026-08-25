@@ -1,0 +1,30 @@
+.carousel-container {
+  display: flex;
+  position: relative;
+  max-width: 255px;
+  max-height: 335px;
+}
+
+.carousel-arrow {
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:first-of-type {
+    left: 20px;
+  }
+
+  &:last-of-type {
+    right: -60px;
+  }
+  @media (min-width: 720px) {
+    height: 80px;
+  }
+}
+
+.image {
+  border-radius: 0.5rem;
+  max-width: 335px;
+  max-height: 255px;
+  object-fit: cover;
+}
