@@ -6,10 +6,14 @@ import { useParams } from 'react-router';
 import properties from '../../data/data.json';
 import './Item.scss';
 import Slideshow from '../Slideshow/Slideshow';
+import { Navigate } from 'react-router-dom';
 
 export default function Item() {
   const { id } = useParams();
   const property = properties.find((item) => item.id === id);
+  if (property === undefined) {
+    return <Navigate to="/error" />;
+  }
   return (
     <>
       <section className="item-container">
