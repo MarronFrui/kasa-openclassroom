@@ -10,14 +10,22 @@ export default function Slideshow({ images }) {
           className="carousel-arrow"
           src="/src/assets/arrow_carousel_left.png"
           onClick={() => {
-            setCurrentIndex(currentIndex - 1);
+            if (currentIndex - 1 === -1) {
+              setCurrentIndex(images.length - 1);
+            } else {
+              setCurrentIndex(currentIndex - 1);
+            }
           }}
         ></img>
         <img className="image" src={images[currentIndex]}></img>
         <img
           className="carousel-arrow"
           onClick={() => {
-            setCurrentIndex(currentIndex + 1);
+            if (currentIndex + 1 === images.length) {
+              setCurrentIndex(0);
+            } else {
+              setCurrentIndex(currentIndex + 1);
+            }
           }}
           src="/src/assets/arrow_carousel_right.png"
         ></img>
