@@ -1,14 +1,20 @@
 import './Rating.scss';
 
-export default function Rating(rating) {
+export default function Rating({ rating }) {
+  const stars = [0, 1, 2, 3, 4];
+
   return (
     <>
       <div className="rating-container">
-        <img className="star" src="../src/assets/rate_star.svg"></img>
-        <img className="star" src="../src/assets/rate_star.svg"></img>
-        <img className="star" src="../src/assets/rate_star.svg"></img>
-        <img className="star" src="../src/assets/rate_star.svg"></img>
-        <img className="star" src="../src/assets/rate_star.svg"></img>
+        {stars.map((index) => (
+          <img
+            key={index}
+            className="star"
+            src={
+              index < rating ? '../src/assets/rate_star_active.svg' : '../src/assets/rate_star.svg'
+            }
+          ></img>
+        ))}
       </div>
     </>
   );
