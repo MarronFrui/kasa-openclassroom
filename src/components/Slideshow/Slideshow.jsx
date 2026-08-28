@@ -6,29 +6,38 @@ export default function Slideshow({ images }) {
   return (
     <>
       <div className="carousel-container">
-        <img
-          className="carousel-arrow"
-          src="/src/assets/arrow_carousel_left.png"
-          onClick={() => {
-            if (currentIndex - 1 === -1) {
-              setCurrentIndex(images.length - 1);
-            } else {
-              setCurrentIndex(currentIndex - 1);
-            }
-          }}
-        ></img>
+        {images.length > 1 && (
+          <img
+            className="carousel-arrow"
+            src="/src/assets/arrow_carousel_left.png"
+            onClick={() => {
+              if (currentIndex - 1 === -1) {
+                setCurrentIndex(images.length - 1);
+              } else {
+                setCurrentIndex(currentIndex - 1);
+              }
+            }}
+          ></img>
+        )}
         <img className="image" src={images[currentIndex]}></img>
-        <img
-          className="carousel-arrow"
-          onClick={() => {
-            if (currentIndex + 1 === images.length) {
-              setCurrentIndex(0);
-            } else {
-              setCurrentIndex(currentIndex + 1);
-            }
-          }}
-          src="/src/assets/arrow_carousel_right.png"
-        ></img>
+        {images.length > 1 && (
+          <img
+            className="carousel-arrow"
+            onClick={() => {
+              if (currentIndex + 1 === images.length) {
+                setCurrentIndex(0);
+              } else {
+                setCurrentIndex(currentIndex + 1);
+              }
+            }}
+            src="/src/assets/arrow_carousel_right.png"
+          ></img>
+        )}
+        {images.length > 1 && (
+          <p className="carousel-length">
+            {currentIndex + 1}/{images.length}
+          </p>
+        )}
       </div>
     </>
   );
