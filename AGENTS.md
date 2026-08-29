@@ -83,14 +83,14 @@ A React multi-page application for browsing rental properties. Design mockups ar
 
 - [x] 1. Initialize project with Vite, add JSON data file, verify `npm run dev` works
 - [x] 2. Install React Router
-- [ ] 3. Set up routing: create pages (Home, Property, Error), layout with header/footer, handle unknown routes
-- [ ] 4. Create Banner and Card components, render property list on Home
-- [ ] 5. Create Collapse component with open/close animation
-- [ ] 6. Create Error page (404) matching Figma design
-- [ ] 7. Create Gallery/Slideshow component with wrap-around navigation
-- [ ] 8. Build Property detail page reusing Collapse and Gallery
-- [ ] 9. Handle invalid property IDs (redirect to error page)
-- [ ] 10. Final review: check style, responsive, error handling, stateful components
+- [x] 3. Set up routing: create pages (Home, Property, Error), layout with header/footer, handle unknown routes
+- [x] 4. Create Banner and Card components, render property list on Home
+- [x] 5. Create Collapse component with open/close animation
+- [x] 6. Create Error page (404) matching Figma design
+- [x] 7. Create Gallery/Slideshow component with wrap-around navigation
+- [x] 8. Build Property detail page reusing Collapse and Gallery
+- [x] 9. Handle invalid property IDs (redirect to error page)
+- [x] 10. Final review: check style, responsive, error handling, stateful components
 
 # DO NOT
 
